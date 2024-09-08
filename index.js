@@ -1,8 +1,5 @@
 
-
-
-
-
+// Stored data about quotes
 const quotesAll = {
     quotesTurkish : [
         `"The death of another does not save us." — Turkish proverb`,
@@ -42,10 +39,79 @@ const quotesAll = {
         "Veni, vidi, vici - I came, I saw, I conquered. — Julius Caesar",
         "Divide et imperia – Divide and conquer. — Julius Caesar",
         "Qui desiderat pacem praeparet bellum - Let him who desires peace prepare for war. — Vegetius"
-    ]
+    ],
+
+    asciiArtArray : [
+        `:-)`, // Smiling Face
+        `
+        __  __
+       /  \\/  \\
+       \\      /
+        \\    /
+         \\  /
+          \\/
+        `, // Heart
+        `
+       /\\_/\\  
+      ( o.o ) 
+       > ^ <
+        `, // Cat
+        `
+         /\\
+        /  \\
+       /____\\
+         ||
+         ||
+        `, // Tree
+        `
+         /\\
+        /  \\
+       /____\\
+       |    |
+       |____|
+        `, // House
+        `
+          ^
+         / \\
+        /___\\
+        |   |
+        |   |
+        |___|
+       /     \\
+      /_______\\
+        `, // Rocket
+        `><(((('>`, // Fish
+        `
+          *
+         /|\\
+        / | \\
+       /__|__\\
+         / \\
+        /   \\
+        `, // Star
+        `
+         \\  |  /
+        '. \\|/ .'
+        '-.;;;.-'
+      --==;;;;;==--
+        .-';;;'-.
+        .' /|\\ '.
+         /  |  \\
+        `, // Sun
+        `
+        _ _
+       ( v )
+        \\|/
+         |
+         |
+        ` // Flower
+      ]
 };
 
-  
+
+
+// The script which randomly selects one of the quotes and logs it
+
 function getRandomQuote() {
     const categories = Object.keys(quotesAll);
     const randomCategory = categories[Math.floor(Math.random() * categories.length)];
